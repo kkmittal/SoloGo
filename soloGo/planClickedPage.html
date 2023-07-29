@@ -5,48 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a New Plan</title>
-    <link rel="stylesheet" href="planClickedPage.css">
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
+    <link rel="stylesheet" href="./styles/planClickedPage.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
     <section>
-        <div class="sidebar">
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
             <div class="dashboard-logo">
-                <h2>SoloGo</h2>
+                <a href="index.html"><h2>SoloGo</h2></a>
                 <hr>
             </div>
             <div class="dashboard-sidebar">
                 <div class="text-with-icon">
-                    <img src="./icons/dashboard.svg" alt="">
-                    <p>Dashboard</p>
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <a href="Dashboard.html">
+                        <p>Dashboard</p>
+                    </a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/plan.svg" alt="">
-                    <p>Plans</p>
+                    <a href="Plan.html"><img src="./icons/plan.svg" alt=""></a>
+                    <a href="Plan.html">
+                        <p>Plan</p>
+                    </a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sheet.svg" alt="">
-                    <p>Expenses</p>
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <a href="Expense.html">
+                        <p>Expenses</p>
+                    </a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sparkle.svg" alt="">
-                    <p>Reviews</p>
+                    <a href="Rewards.html"><img src="./icons/sparkle.svg" alt=""></a>
+                    <a href="Rewards.html">
+                        <p>Rewards</p>
+                    </a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/hotel.svg" alt="">
-                    <p>Bookings</p>
+                    <a href="booking.html"><img src="./icons/hotel.svg" alt=""></a>
+                    <a href="booking.html">
+                        <p>Booking</p>
+                    </a>
                 </div>
             </div>
             <div class="dashboard-logout">
                 <div class="text-with-icon">
-                    <img src="./icons/log-out.svg" alt="">
-                    <p>Log Out</p>
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="dashboard-search">
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
             <form action="">
                 <img src="./icons/search.svg" alt="">
                 <input type="search" name="" placeholder="Search" id="mainsearch">
@@ -63,81 +81,97 @@
     </section>
     <section class="plan-clicked-main">
         <div class="back-btn">
-            <span class="bcard-tag"><img src="./icons/leftarrow.svg" alt=""></span>
-            <h2>Back</h2>
+            <a href="Plan.html"><span class="bcard-tag"><img src="./icons/leftarrow.svg" alt=""></span></a>
+            <a href="Plan.html">
+                <h2>Back</h2>
+            </a>
         </div>
         <div class="title-container">
             <div class="plan-title">
-            <h1>Lucknow to Agra</h1>
-        </div>
-        <div class="right-sidebar">
-            <img src="./Assets/varansai.jpg" alt="">
-            <form action="">
-                <p>No. of Days</p>
-                <input type="text">
-                <p>Min Budget</p>
-                <input type="text">
-                <p>Max Budget</p>
-                <input type="text">
-                <button type="submit">Update Plan</button>
-            </form>
-        </div>
-        </div>
-        <div class="plan-content">
-            <div class="plan-days">
-                <span class="bcard-tag">Day 1</span>
-                <div class="plan-images">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                </div>  
-                <p class="plan-content-subheading">Lucknow to Agra</p>
-                <ul>
-                    <li>Depart from Lucknow early in the morning.</li>
-                    <li>Drive to Agra (approximately 6-7 hours' journey, depending on traffic).</li>
-                    <li>Visit the iconic Taj Mahal, one of the Seven Wonders of the World.</li>
-                    <li>Explore Agra Fort, a UNESCO World Heritage site, and enjoy the view of the Taj Mahal from here.
-                    </li>
-                </ul>
+                <h1>Lucknow to Agra</h1>
             </div>
-            <!-- day 2 -->
-            <div class="plan-days">
-                <span class="bcard-tag">Day 2</span>
-                <div class="plan-images">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                </div>
-                <p class="plan-content-subheading">Agra to Jaipur via Fatehpur </p>
-                <ul>
-                    <li>After breakfast, leave for Jaipur with a stopover at Fatehpur Sikri (about a 4-hour drive).</li>
-                    <li>Explore Fatehpur Sikri, the abandoned Mughal city known for its historical significance and beautiful architecture.</li>
-                    <li>Continue the journey to Jaipur (approximately 4 hours).</li>
-                    <li>Arrive in Jaipur and check into your hotel.</li>
-                    <li>Rest and relax in the evening.</li>
-                    <li>Overnight stay in Jaipur.</li>
-                </ul>
+        </div>
+        <div class="content-sec">
+            <div class="right-sidebar" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./Assets/varansai.jpg" alt="">
+                <form action="">
+                    <p>No. of Days</p>
+                    <input type="text">
+                    <p>Min Budget</p>
+                    <input type="text">
+                    <p>Max Budget</p>
+                    <input type="text">
+                    <button type="submit">Update Plan</button>
+                </form>
             </div>
-            <!-- day 3 -->
-            <div class="plan-days">
-                <span class="bcard-tag">Day 3</span>
-                <div class="plan-images">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
-                    <img src="./Assets/hotel1.jpg" alt="">
+            <div class="plan-content">
+                <div class="plan-days">
+                    <span class="bcard-tag">Day 1</span>
+                    <div class="plan-images">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                    </div>
+                    <p class="plan-content-subheading">Lucknow to Agra</p>
+                    <ul>
+                        <li>Depart from Lucknow early in the morning.</li>
+                        <li>Drive to Agra (approximately 6-7 hours' journey, depending on traffic).</li>
+                        <li>Visit the iconic Taj Mahal, one of the Seven Wonders of the World.</li>
+                        <li>Explore Agra Fort, a UNESCO World Heritage site, and enjoy the view of the Taj Mahal from here.
+                        </li>
+                    </ul>
                 </div>
-                <p class="plan-content-subheading">Agra to Jaipur via Fatehpur </p>
-                <ul>
-                    <li>After breakfast, leave for Jaipur with a stopover at Fatehpur Sikri (about a 4-hour drive).</li>
-                    <li>Explore Fatehpur Sikri, the abandoned Mughal city known for its historical significance and beautiful architecture.</li>
-                    <li>Continue the journey to Jaipur (approximately 4 hours).</li>
-                    <li>Arrive in Jaipur and check into your hotel.</li>
-                    <li>Rest and relax in the evening.</li>
-                    <li>Overnight stay in Jaipur.</li>
-                </ul>
+                <!-- day 2 -->
+                <div class="plan-days">
+                    <span class="bcard-tag">Day 2</span>
+                    <div class="plan-images">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                    </div>
+                    <p class="plan-content-subheading">Agra to Jaipur via Fatehpur </p>
+                    <ul>
+                        <li>After breakfast, leave for Jaipur with a stopover at Fatehpur Sikri (about a 4-hour drive).</li>
+                        <li>Explore Fatehpur Sikri, the abandoned Mughal city known for its historical significance and
+                            beautiful architecture.</li>
+                        <li>Continue the journey to Jaipur (approximately 4 hours).</li>
+                        <li>Arrive in Jaipur and check into your hotel.</li>
+                        <li>Rest and relax in the evening.</li>
+                        <li>Overnight stay in Jaipur.</li>
+                    </ul>
+                </div>
+                <!-- day 3 -->
+                <div class="plan-days">
+                    <span class="bcard-tag">Day 3</span>
+                    <div class="plan-images">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                        <img src="./Assets/hotel1.jpg" alt="">
+                    </div>
+                    <p class="plan-content-subheading">Agra to Jaipur via Fatehpur </p>
+                    <ul>
+                        <li>After breakfast, leave for Jaipur with a stopover at Fatehpur Sikri (about a 4-hour drive).</li>
+                        <li>Explore Fatehpur Sikri, the abandoned Mughal city known for its historical significance and
+                            beautiful architecture.</li>
+                        <li>Continue the journey to Jaipur (approximately 4 hours).</li>
+                        <li>Arrive in Jaipur and check into your hotel.</li>
+                        <li>Rest and relax in the evening.</li>
+                        <li>Overnight stay in Jaipur.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
 </body>
 
 </html>

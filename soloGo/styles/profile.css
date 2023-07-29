@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Literata:wght@300;400;500;600;800&family=Mukta:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../Assets/dashboard\ bkg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+
+.sidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: #02293d;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 28px;
+}
+
+.text-with-icon{
+    display: flex;
+    column-gap: 20px;
+}
+
+.text-with-icon p{
+    font-size: 16px;
+    color: white;
+    font-family: Lato;
+}
+
+.text-with-icon a{
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-logo h2{
+    font-size: 24px;
+    color: white;
+    font-family: Lato;
+    margin-bottom: 24px;
+}
+
+.dashboard-logo hr{
+    color: #efefef;
+    opacity: 50%;
+}
+
+.dashboard-sidebar{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.dashboard-logout{
+    margin-top: 10rem;
+}
+
+.dashboard-search{
+    background-color: #02293d;
+    margin-left: 16rem;
+    /* width: 100%; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1.2rem;
+    padding-right: 5rem;
+}
+
+.dashboard-search form{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 535px;
+    border-radius: 100px;
+    padding: .5rem;
+}
+
+.dashboard-search img{
+    margin-left: 4px;
+}
+
+.dashboard-search input{
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin-left: 16px;
+    color: white;
+    font-family: Lato;
+    font-size: 16px;
+    transition-duration: 250ms;
+}
+
+.dashboard-search input::placeholder{
+    color: white;
+    font-family: Lato;
+    opacity: 100%;
+    transition-duration: 250ms;
+}
+
+.dashboard-search input:focus::placeholder{
+    opacity: 0;
+}   
+
+.dashboard-noti{
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 4px;
+    margin-left: 1.5rem;
+}
+
+.dashboard-profile {
+    background-image: url(../Assets/person.jpg);
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-left: 1.5rem;
+}
+
+.search-right{
+    display: flex;
+}
+/* profile -right side styling */
+
+  
+.profile{
+    margin-left: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+.first-prof{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.first-prof .img-user-pic{
+    background-image: url(../Assets/person.jpg);
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+.points-show{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 112px;
+    height: 50px;
+    margin-right: 80px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.points-show img{
+    margin-left: 2px;
+}
+.points-show p{
+    color: #02293d;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato";
+    margin-left: 5px;
+}
+.go{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #02293d;
+    width: 41px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+.go #G{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Lato";
+}
+.go img{
+    height: 16px;
+    width: 16px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 37px;
+}
+
+
+
+.user-first, .second-pass{
+    display: flex;
+    margin-bottom: 30px;
+}
+.user-name, .user-email, .user-password, .user-phone{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.user-name label, .user-email label, .user-password label, .user-phone label{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Lato";
+}
+.user-name input, .user-email input, .user-password input, .user-phone input{
+    width: 259px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #02293d;
+    border: 1px solid rgb(178, 211, 242, 0.2);
+    color: #fff;
+    padding: 4px;
+    padding-left: 6px;
+}
+.user-info button{
+    width: 189px;
+    height: 34px;
+    background-color: #B2D3F2;
+    border-radius: 8px;
+    border: none;
+    color: #023047;
+    font-weight: 700;
+    font-family: "Lato";
+}
+
+#profile-edit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+    height: 2.5rem;
+}
+#profile-edit-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.pass{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.pass a{
+    color: #B2D3F2;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Lato";
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.change-password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.change-password label{
+    font-size: 14px;
+}
+
+.old-password, .new-password{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.old-password label, .new-password label{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 500;
+}
+.old-password input, .new-password input{
+    width: 259px;
+    padding-left: 1rem;
+    color: white;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #02293d;
+    border: 1px solid rgb(178, 211, 242, 0.2);
+}
+.change-password button{
+    background-color: #B2D3F2;
+    width: 189px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Lato";
+    color: #02293d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+}
+
+.dashboard-edit-profile input:focus{
+    outline: none;
+}
+
+.user-info input {
+    padding-left: 1rem;
+  }

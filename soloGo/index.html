@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoloGo: Your Personalised Travel Companion</title>
@@ -9,282 +10,337 @@
     <link rel="stylesheet" href="./styles/HeroSection.css" />
     <link rel="stylesheet" href="./styles/PopularPlace.css" />
     <link rel="stylesheet" href="./styles/FeatureAndService.css">
-    <link rel="stylesheet" href="./styles/Testimonial.css">
     <link rel="stylesheet" href="./styles/pagefooter.css">
+    <link rel="stylesheet" href="./styles/Animation.css">
+    <link rel="stylesheet" href="./styles/Testimonial.css">
+    <link rel="stylesheet" href="./styles/Responsive.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/slider.css" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <style>
-      body {
-        overflow-x: hidden;
-      }
-      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Literata:wght@400;500;600;800&family=Mukta:wght@400;500&display=swap");
+        body {
+            overflow-x: hidden;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Literata:wght@400;500;600;800&family=Mukta:wght@400;500&display=swap");
     </style>
-  </head>
-  <body>
-    <!-- snowfall -->
-    <div class="snow_wrap">
-        <div class="snow"></div>
-    </div>
-    <!--  -->
-    <nav class="navbar">
-      <div class="left-navbar">SoloGo</div>
-      <div class="right-navbar">
-        <div class="left-navsec">
-          <p>Trip Planner</p>
-          <p>Community</p>
-          <p>Contact Us</p>
+</head>
+
+<body>
+    <script src="script/snowfall.js"></script>
+    <!-- animation library js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <nav class="navbar" data-aos="fade-down" data-aos-delay="1000">
+        <div class="left-navbar"><a href="/">SoloGo</a></div>
+        <div class="right-navbar">
+            <div class="left-navsec">
+                <p><a href="login.html">AI Trip Planner</a></p>
+                <p><a href="login.html">Rewards</a></p>
+                <p><a href="ContactUs.html">Contact Us</a></p>
+            </div>
+            <div class="right-navsec">
+                <button class="btn-primary"><a href="signup.html">Sign Up</a></button>
+            </div>
         </div>
-        <div class="right-navsec">
-          <button class="btn-primary">Sign Up</button>
-        </div>
-      </div>
     </nav>
 
     <!-- Hero section -->
     <section class="hero">
-        <div class="snow_wrap">
-            <div class="snow"></div>
-        </div>
-      <img src="./Assets/hero_image.png" alt="" />
-      <h1 class="hero-heading">Plan your Destination</h1>
+        <div id="snow" count="400"></div>
+        <img src="./Assets/hero_image.png" alt="" />
+        <h1 class="hero-heading" data-aos="fade-down" data-aos-duration="1000">Plan your Destination</h1>
     </section>
 
     <!-- Popular Places Section  -->
-    
+
     <section class="popular-place">
         <!-- arrows -->
-        <div class="arrow left-arrow" onclick="scrollCards('left')">&#10094;</div>
-        <div class="arrow right-arrow" onclick="scrollCards('right')">&#10095;</div>
+        <div class="parrow pleft-arrow" onclick="scrollCards('left')">&#10094;</div>
+        <div class="parrow pright-arrow" onclick="scrollCards('right')">&#10095;</div>
         <!--  -->
-        <div class="snow_wrap">
-            <div class="snow"></div>
+        <h1 class="popular-place-heading" data-aos="fade-up" data-aos-delay="300"
+            data-aos-anchor-placement="top-center">
+            Recommended <span>Popular</span> <br />
+            Destination
+        </h1>
+        <p class="popular-place-text" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-center">
+            Explore Coveted Getaway Spots: Unveiling the Most Popular Destinations!</p>
+        <div class="btn-tertiary" data-aos="fade-left" data-aos-delay="500"><button class="view-all">View All</button>
         </div>
-      <h1 class="popular-place-heading">
-        Recommended <span>Popular</span> <br />
-        Destination
-      </h1>
-      <p class="popular-place-text">Explore Coveted Getaway Spots: Unveiling the Most Popular Destinations!</p>
-      <div class="btn-tertiary"><button class="view-all">View All</button></div>
-      <!-- card start here -->
+        <!-- card start here -->
 
-      <div class="horizontal-scroll-container">
+        <div class="horizontal-scroll-container">
 
-        <!-- Cards Start here -->
-        <div class="card">
-            <img class="card-img" src="./Assets/udaipur.jpg" alt="" />
-            <div class="card-details">
-                <div class="card-detail-upper">
-                    <div class="box">
-                        <p class="card-title">Udaipur</p>
-                        <div class="card-rating">
-                            <p>4.5</p>
-                            <ion-icon name="star" style="color: #effc5a"></ion-icon>
-                        </div>
-                    </div>
-                    <p class="card-location">Rajasthan, India</p>
+            <!-- Cards Start here -->
+            <div class="card" data-aos="slide-left" data-aos-delay="500">
+                <div class="slideit-1">
+                    <img class="card-img" src="./Assets/udaipur.jpg" alt="" />
+                    <img class="card-img" src="./Assets/udaipur_2.jpg" alt="" />
+                    <img class="card-img" src="./Assets/market rajasthan-2.jpg" alt="" />
+                    <img class="card-img" src="./Assets/market rajasthan-3.jpg" alt="" />
                 </div>
-                <div class="card-detail-lower">
-                    <p class="card-description">A very beautiful place with so many awesome places, that is must a go </p>
-                    <button class="card-btn">Book Now</button>
+                <div class="card-details">
+                    <div class="card-detail-upper">
+                        <div class="ratingbox">
+                            <p class="card-title">Udaipur</p>
+                            <div class="card-rating">
+                                <p>4.5</p>
+                                <ion-icon name="star" style="color: #effc5a"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="card-location">Rajasthan, IN</p>
+                    </div>
+                    <div class="card-detail-lower">
+                        <p class="card-description">Enchanting lakeside city with regal palaces and royal heritage.</p>
+                        <button class="card-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card" data-aos="slide-left" data-aos-delay="550">
+                <div class="slideit-2">
+                    <img class="card-img" src="./Assets/church_goa.jpg" alt="" />
+                    <img class="card-img" src="./Assets/beach-1.jpg" alt="" />
+                    <img class="card-img" src="./Assets/goa_waterfall.jpg" alt="" />
+                    <img class="card-img" src="./Assets/beach-3.jpg" alt="" />
+                </div>
+                <div class="card-details">
+                    <div class="card-detail-upper">
+                        <div class="ratingbox">
+                            <p class="card-title">Goa</p>
+                            <div class="card-rating">
+                                <p>4.5</p>
+                                <ion-icon name="star" style="color: #effc5a"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="card-location">Goa, IN</p>
+                    </div>
+                    <div class="card-detail-lower">
+                        <p class="card-description">Tropical paradise of sandy beaches and vibrant coastal culture.</p>
+                        <button class="card-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card" data-aos="slide-left" data-aos-delay="600">
+                <div class="slideit-3">
+                    <img class="card-img" src="./Assets/taj mahal.jpg" alt="" />
+                    <img class="card-img" src="./Assets/agra red fort.jpg" alt="" />
+                    <img class="card-img" src="./Assets/agra red fort-1.jpg" alt="" />
+                    <img class="card-img" src="./Assets/taj mahal.jpg" alt="" />
+                </div>
+                <div class="card-details">
+                    <div class="card-detail-upper">
+                        <div class="ratingbox">
+                            <p class="card-title">Agra</p>
+                            <div class="card-rating">
+                                <p>4.5</p>
+                                <ion-icon name="star" style="color: #effc5a"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="card-location">Uttar Pradesh, IN</p>
+                    </div>
+                    <div class="card-detail-lower">
+                        <p class="card-description">Majestic Taj Mahal and rich Mughal history await you.
+                        </p>
+                        <button class="card-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card" data-aos="slide-left" data-aos-delay="650">
+                <div class="slideit-4">
+                    <img class="card-img" src="./Assets/ghat-4.jpg" alt="" />
+                    <img class="card-img" src="./Assets/ghat-5.jpg" alt="" />
+                    <img class="card-img" src="./Assets/diya_varansi.jpg" alt="" />
+                    <img class="card-img" src="./Assets/varansai.jpg" alt="" />
+                </div>
+                <div class="card-details">
+                    <div class="card-detail-upper">
+                        <div class="ratingbox">
+                            <p class="card-title">Varansi</p>
+                            <div class="card-rating">
+                                <p>4.5</p>
+                                <ion-icon name="star" style="color: #effc5a"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="card-location">Uttar Pradesh, IN</p>
+                    </div>
+                    <div class="card-detail-lower">
+                        <p class="card-description">Timeless charm along the Ganga River beckons spiritual seekers.</p>
+                        <button class="card-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="slide-left" data-aos-delay="700">
+                <div class="slideit-5">
+                    <img class="card-img" src="./Assets/jodhpur-1.jpg" alt="" />
+                    <img class="card-img" src="./Assets/jodhpur-2.jpg" alt="" />
+                    <img class="card-img" src="./Assets/jodhpur3.jpg" alt="" />
+                    <img class="card-img" src="./Assets/jodhpur-4.jpg" alt="" />
+                </div>
+                <div class="card-details">
+                    <div class="card-detail-upper">
+                        <div class="ratingbox">
+                            <p class="card-title">Jodhpur</p>
+                            <div class="card-rating">
+                                <p>4.4</p>
+                                <ion-icon name="star" style="color: #effc5a"></ion-icon>
+                            </div>
+                        </div>
+                        <p class="card-location">Rajasthan, IN</p>
+                    </div>
+                    <div class="card-detail-lower">
+                        <p class="card-description">Timeless charm along the Ganga River beckons spiritual seekers.</p>
+                        <button class="card-btn">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--  -->
-        <div class="card">
-            <img class="card-img" src="./Assets/taj mahal.jpg" alt="" />
-            <div class="card-details">
-                <div class="card-detail-upper">
-                    <div class="box">
-                        <p class="card-title">Udaipur</p>
-                        <div class="card-rating">
-                            <p>4.5</p>
-                            <ion-icon name="star" style="color: #effc5a"></ion-icon>
-                        </div>
-                    </div>
-                    <p class="card-location">Rajasthan, India</p>
-                </div>
-                <div class="card-detail-lower">
-                    <p class="card-description">A very beautiful place with so many awesome places, that is must a go</p>
-                    <button class="card-btn">Book Now</button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="card">
-            <img class="card-img" src="./Assets/varansai.jpg" alt="" />
-            <div class="card-details">
-                <div class="card-detail-upper">
-                    <div class="box">
-                        <p class="card-title">Udaipur</p>
-                        <div class="card-rating">
-                            <p>4.5</p>
-                            <ion-icon name="star" style="color: #effc5a"></ion-icon>
-                        </div>
-                    </div>
-                    <p class="card-location">Rajasthan, India</p>
-                </div>
-                <div class="card-detail-lower">
-                    <p class="card-description">A very beautiful place with so many awesome places, that is must a go </p>
-                    <button class="card-btn">Book Now</button>
-                </div>
-            </div>
-        </div>
-        <!--  -->
-        <div class="card">
-            <img class="card-img" src="./Assets/udaipur.jpg" alt="" />
-            <div class="card-details">
-                <div class="card-detail-upper">
-                    <div class="box">
-                        <p class="card-title">Udaipur</p>
-                        <div class="card-rating">
-                            <p>4.5</p>
-                            <ion-icon name="star" style="color: #effc5a"></ion-icon>
-                        </div>
-                    </div>
-                    <p class="card-location">Rajasthan, India</p>
-                </div>
-                <div class="card-detail-lower">
-                    <p class="card-description">A very beautiful place with Lorem ipsum dolor sit amet consectetur.</p>
-                    <button class="card-btn">Book Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
-    <!--Features and Services Section--> 
-    
+    <!--Features and Services Section-->
+
     <section id="Services">
-        <div class="snow_wrap">
-            <div class="snow"></div>
-        </div>
-        <h1 id="features">Features and Services</h1>
+        <h1 id="features" data-aos="fade-down" data-aos-delay="500">Features and Services</h1>
         <div class="box">
-            <div class="left">
+            <div class="left" data-aos="zoom-in-right">
                 <img class="Serviceimg" src="Assets/robot.png">
             </div>
             <div class="boxdetail">
-                <h4 class="heading">Effortless Travel Planning</h4>
-                <p class="content">An AI-powered trip planner exclusively for adventurers. Plan meticulously, explore landmarks, and immerse in culture with personalized recommendations. Your virtual travel companion for unforgettable solo journeys</p>
+                <h4 class="heading" data-aos="fade-left">Effortless Travel Planning</h4>
+                <p class="content" data-aos="fade-left">An AI-powered trip planner exclusively for
+                    adventurers. Plan meticulously, explore landmarks, and immerse in culture with personalized
+                    recommendations. Your virtual travel companion for unforgettable solo journeys</p>
                 <br>
                 <div class="btn-text-align">
-                    <button class="btn-services">Try Now >
-
-                    </button>
-                    <div class="circle"></div>
-                    <a href="#" id="link">Its Free, Check it out.</a>
+                    <a href="login.html"><button class="btn-services" data-aos="zoom-in">Try Now </button></a>
+                    <div class="circle" data-aos="zoom-in"></div>
+                    <a href="login.html" id="link" data-aos="zoom-in">Its Free, Check it out.</a>
                 </div>
-    
+
             </div>
         </div>
-        
-        <div class="box">
+
+        <div class="box tablet">
             <div class="boxdetail">
-                <h4 class="heading">Free Tour Guide</h4>
-                <p class="content">Unlock the world of solo travel with SoloGo - your trusted free guide to unforgettable adventures. Empowering solo travelers with comprehensive assistance, all at your fingertips.</p><br>
-                <button class="btn-services">Explore Now ></button>
+                <h4 class="heading" data-aos="fade-right">Free Tour Guide</h4>
+                <p class="content" data-aos="fade-right">Embark on a memorable journey with our exceptional free tour
+                    guide service. Our knowledgeable and passionate local guides will lead you through the hidden gems
+                    and iconic landmarks, offering insightful stories and historical context along the way.</p><br>
+                <a href="signup.html"><button class="btn-services" data-aos="zoom-in">Book Now ></button></a>
             </div>
-            <div class="right">
+            <div class="right" data-aos="zoom-in-left">
                 <img class="Serviceimg" src="Assets/tourguide.png">
             </div>
         </div>
-        <div class="box">
-            <div class="left">
+        <div class="box ">
+            <div class="left" data-aos="zoom-in-right">
                 <img class="Serviceimg" src="Assets/expense.png">
             </div>
             <div class="boxdetail">
-                <h4 class="heading">Expense Manager</h4>
-                <p class="content">An AI-powered trip planner exclusively for adventurers. Plan meticulously, explore landmarks, and immerse in culture with personalized recommendations. Your virtual travel companion for unforgettable solo journeys</p><br>
-                <button class="btn-services">Check it Out ></button>
+                <h4 class="heading" data-aos="fade-left">Expense Manager</h4>
+                <p class="content" data-aos="fade-left">Make travel planning stress-free with our integrated expense
+                    manager feature. Keep track of your spending, set budgets, and stay organized throughout your
+                    journey.</p><br>
+                <a href="signup.html"><button class="btn-services" data-aos="zoom-in">Check it Out ></button></a>
             </div>
-        </div>
-        
-        <div class="snow_wrap">
-            <div class="snow"></div>
         </div>
 
-        <div class="box">
+        <div class="box tablet">
             <div class="boxdetail">
-                <h4 class="heading">Live Location & Support</h4>
-                <p class="content">Unlock the world of solo travel with SoloGo - your trusted free guide to unforgettable adventures. Empowering solo travelers with comprehensive assistance, all at your fingertips.</p><br>
-                <button class="btn-services">Contact Us ></button>
+                <h4 class="heading" data-aos="fade-right">Live Location & Support</h4>
+                <p class="content" data-aos="fade-right">Stay connected with live location tracking, ensuring your
+                    security during solo trips. Our 24/7 assistance and comprehensive safety resources are here to
+                    support you at every step of your journey.</p><br>
+                <a href="ContactUs.html"><button class="btn-services" data-aos="zoom-in">Contact Us ></button></a>
             </div>
-            <div class="right">
-                <img  class="Serviceimg" src="Assets/callhelp.png">
+            <div class="right" data-aos="zoom-in-left">
+                <img class="Serviceimg" src="Assets/callhelp.png">
             </div>
         </div>
         <!-- Testimonials -->
-        <div class="snow_wrap">
-            <div class="snow"></div>
-        </div>
-        <h1 class="testimonial-heading">People Who <span>Trust</span> Us</h1>
-        <div class="testimonial-container">
-            
-            <section class="testimonial">
-                    <div class="testimonial-card">
-                        <div class="tcard-top">
-                            <div class="tcard-profile">
-                            </div>
-                            <div class="card-userinfo">
-                                <p class="tcard-name">John Doe</p>
-                                <p class="tcard-location">Uttarakhund, India</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <img src="quote.svg" alt="" srcset="">
-                            <p class="testimonial-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam totam possimus veniam provident laborum!</p>
-                        </div>
-                    </div>
-                    <!-- card 2 -->
-                    <div class="testimonial-card">
-                        <div class="tcard-top">
-                            <div class="tcard-profile">
-                            </div>
-                            <div class="card-userinfo">
-                                <p class="tcard-name">John Doe</p>
-                                <p class="tcard-location">Uttarakhund, India</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <img src="quote.svg" alt="" srcset="">
-                            <p class="testimonial-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam totam possimus veniam provident laborum!</p>
+        <h1 class="testimonial-heading" id="testimonial-link" data-aos="zoom-out" data-aos-delay="500">People Who
+            <span>Trust</span> Us
+        </h1>
+        <section class="container" data-aos="zoom-in-up">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="./Assets/person_4.jpg" alt="" class="image" />
+                        <p>
+                            The expense manager was a lifesaver during my trip to Goa. It kept my budget in check while
+                            enjoying. Highly recommended!
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Maya Sharma</span>
+                            <span class="job">Gujrat, India</span>
                         </div>
                     </div>
-                    <!-- card 3 -->
-                    <div class="testimonial-card">
-                        <div class="tcard-top">
-                            <div class="tcard-profile">
-                            </div>
-                            <div class="card-userinfo">
-                                <p class="tcard-name">John Doe</p>
-                                <p class="tcard-location">Uttarakhund, India</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <img src="quote.svg" alt="" srcset="">
-                            <p class="testimonial-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam totam possimus veniam provident laborum!</p>
-                        </div>
-                    </div>
-                    <!-- card 4 -->
-                    <div class="testimonial-card">
-                        <div class="tcard-top">
-                            <div class="tcard-profile">
-                            </div>
-                            <div class="card-userinfo">
-                                <p class="tcard-name">John Doe</p>
-                                <p class="tcard-location">Uttarakhund, India</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <img src="quote.svg" alt="" srcset="">
-                            <p class="testimonial-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam totam possimus veniam provident laborum!</p>
+                    <div class="slide swiper-slide">
+                        <img src="./Assets/person.jpg" alt="" class="image" />
+                        <p>
+                            The expense manager was a lifesaver during my trip to Goa. It kept my budget in check while
+                            enjoying. Highly recommended!
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Aryan Patel</span>
+                            <span class="job">Banglore, India</span>
                         </div>
                     </div>
-                </section>
+                    <div class="slide swiper-slide">
+                        <img src="./Assets/person_2.jpg" alt="" class="image" />
+                        <p>
+                            The AI Planner is great, it knows whats the best for. It is very personalised of a person,
+                            can also provide great suggestion.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Riya Desai</span>
+                            <span class="job">New York, USA</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="./Assets/person_3.jpg" alt="" class="image" />
+                        <p>
+                            Varanasi's spiritual aura was enchanting.A must-have companion for every Indian-American
+                            adventurer!
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Issabel</span>
+                            <span class="job">Illinois, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
             </div>
+        </section>
+
     </section>
-    
+
     <!-- footer -->
     <footer class="footer">
-        
+
         <!-- <div class="blur"> -->
         <!-- </div> -->
         <div class="overlay">
@@ -292,7 +348,7 @@
                 <div class="text">
                     <h2>SoloGo</h2>
                     <br>
-                    <p>A personalised travel platform </p> 
+                    <p>A personalised travel platform </p>
                     <p>for solo travelers</p>
                 </div>
                 <div class="logo">
@@ -306,21 +362,30 @@
                     <a href="#" id="head">Important Links</a>
                     <a href="#">Terms and Conditions</a>
                     <a href="#">Privacy Policy</a>
-                    <a href="#">Contact us</a>
+                    <a href="ContactUs.html">Contact us</a>
                     <a href="#">Copyrights</a>
                 </div>
                 <div class="services">
                     <a href="#" id="head">Services</a>
-                    <a href="#">AI Planner</a>
-                    <a href="#">Community</a>
-                    <a href="#">Testimonials</a>
+                    <a href="login.html">AI Planner</a>
+                    <a href="#">Rewards</a>
+                    <a href="#testimonial-link">Testimonials</a>
                     <a href="#">Safety Guidelines</a>
                 </div>
             </div>
         </div>
     </footer>
-  </body>
-  <script src="./script/script.js"></script>
-  
-  
+
+    <script>
+        AOS.init({ disable: 'mobile' });
+    </script>
+    <script src="./script/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="script/testimonial.js"></script>
+</body>
+
+
 </html>

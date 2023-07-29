@@ -34,6 +34,11 @@ body {
     font-family: Lato;
 }
 
+.text-with-icon a{
+    color: white;
+    text-decoration: none;
+}
+
 .dashboard-logo h2{
     font-size: 24px;
     color: white;
@@ -118,8 +123,13 @@ body {
     margin-left: 1.5rem;
 }
 
+.dashboard-noti a{
+    display: flex;
+    align-items: center;
+}
+
 .dashboard-profile {
-    background-image: url(./Assets/person.jpg);
+    background-image: url(../Assets/person.jpg);
     height: 40px;
     width: 40px;
     background-size: cover;
@@ -187,14 +197,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.change{
-    margin-left: 40px;
-    margin-top: 28px;
-    margin-bottom: 18px;
+    margin: 1rem 0rem 01rem 2.5rem;
 }
 .btns button{
-    margin-right: 80px;
     width: 97px;
     height: 34px;
     background-color: #B2D3F2;
@@ -202,6 +207,12 @@ body {
     border: none;
     font-family: "Lato";
 }
+
+.btns button a{
+    color: black;
+    text-decoration: none;
+}
+
 .change button{
     width: 67px;
     height: 34px;
@@ -211,6 +222,12 @@ body {
     border: none;
     font-family: "Lato";
 }
+
+.change button a{
+    color: black;
+    text-decoration: none;
+}
+
 .lists{
     display: flex;
     flex-direction: column;
@@ -253,3 +270,64 @@ body {
     font-size: 22px;
     font-family:"Lato";
 }
+
+.plans-highlight{
+    display: flex;
+    column-gap: 20px;
+    width:150px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #325F89;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+  }
+
+  .plans-highlight img{
+    margin-left: 10px;
+  }
+
+  .expense-download{
+    margin-right: 5rem;
+  }
+   /* Medium Screen View*/
+
+   @media (max-width:820px){
+    .expense {
+        margin-left: 6rem;
+    }
+    .first-tab, .second-tab, .third-tab, .fourth-tab {
+        /* margin-right: 30px; */
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .tabs{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 3rem;
+    }
+    .lists{
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+    }
+    .btns{
+        margin-top: 3rem;
+    }
+    .amount img{
+        margin-left: 2.5rem;
+    }
+    .one, .two, .three, .four, .five, .six{
+        margin-bottom: 15px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .one p, .two p, .three p, .four p, .five p, .six p{
+        font-size: 16px;
+    }
+    #rcv, #noo{
+        display: none;
+    }
+    .expense-download{
+        margin-right: 2rem;
+      }
+   }

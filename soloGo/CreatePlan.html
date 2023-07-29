@@ -4,48 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/CreatePlan.css">
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <link rel="stylesheet" href="./styles/CreatePlan.css">  
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
     <section>
-        <div class="sidebar">
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
             <div class="dashboard-logo">
-                <h2>SoloGo</h2>
+                <h2><a href="index.html">SoloGo</a></h2>
                 <hr>
             </div>
             <div class="dashboard-sidebar">
                 <div class="text-with-icon">
-                    <img src="./icons/dashboard.svg" alt="">
-                    <p>Dashboard</p>
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <a href="Dashboard.html">
+                        <p>Dashboard</p>
+                    </a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/plan.svg" alt="">
-                    <p>Plans</p>
+                    <a href="Plan.html"><div class="dashboard-highlight">
+                        <img src="./icons/plan.svg" alt="">
+                        <p>Plans</p>
+                    </div></a>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sheet.svg" alt="">
-                    <p>Expenses</p>
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <p><a href="Expense.html">Expenses</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sparkle.svg" alt="">
-                    <p>Reviews</p>
+                    <a href="Rewards.html"><img src="./icons/sparkle.svg" alt=""></a>
+                    <p><a href="Rewards.html">Rewards</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/hotel.svg" alt="">
-                    <p>Bookings</p>
+                    <a href="booking.html"><img src="./icons/hotel.svg" alt=""></a>
+                    <p><a href="booking.html">Bookings</a></p>
                 </div>
             </div>
             <div class="dashboard-logout">
                 <div class="text-with-icon">
-                    <img src="./icons/log-out.svg" alt="">
-                    <p>Log Out</p>
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
                 </div>
             </div>
         </div>
     </section> 
     <section>
-        <div class="dashboard-search">
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
             <form action="">
                 <img src="./icons/search.svg" alt="">
                 <input type="search" name="" placeholder="Search" id="mainsearch">
@@ -54,9 +68,7 @@
                 <div class="dashboard-noti">
                     <img src="./icons/bell.svg" alt="">
                 </div>
-                <div class="dashboard-profile">
-                    
-                </div>
+                <a href="profile.html"><div class="dashboard-profile"></div></a>
             </div>
         </div>
     </section>
@@ -124,11 +136,21 @@
             <div class="condition">
                 <div class="check">
                     <input type="checkbox" id="chck">
-                    <label for="chck">I agree that the plan generated may have some issue, I hereby taking <br> the responsibility of it.</label>
+                    <label for="chck">I agree that the plan generated may have some issue, I hereby taking the responsibility of it.</label>
                 </div>
-                <button>Make My Plan</button>
+                <a href="Plan.html"><button>Make My Plan</button></a>
             </div>
         </div>  
     </section>
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
 </body>
 </html>

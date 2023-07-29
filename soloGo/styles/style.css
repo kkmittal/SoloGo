@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Literata:wght@300;400;500;600;800&family=Mukta:wght@400;500&display=swap");
+
+body {
+  background-image: url(../Assets/dashboard\ bkg.png);
+  height: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/*dashboard home content style*/
+#plan {
+  margin-left: 300px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+#plan{
+  color: white;
+  font-family: "Lato", sa;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#activeplans {
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 205px;
+  height: 253px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(9.199999809265137px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  transition: 0.2s ease;
+}
+#activeplans:hover {
+  opacity: 0.8;
+}
+#activeplans p {
+  color: #fff;
+  text-align: justify;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 10px 20px;
+}
+
+#activeplans button {
+  color: white;
+  background: transparent;
+  position: absolute;
+  left: 80%;
+  bottom: 90%;
+  box-shadow: none;
+  border: transparent;
+  font-size: xx-large;
+  font-weight: 500;
+}
+#activeplans button,
+img:hover {
+  cursor: pointer;
+}
+#activeplans img {
+  width: 181px;
+  height: 125px;
+  flex-shrink: 0;
+  margin: 0px 12px;
+}
+.des {
+  margin-left: 12px;
+}
+.des div {
+  color: #8c8c8c;
+  text-align: justify;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 8px;
+}
+.des h4 {
+  color: #fff;
+  text-align: justify;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+.des .price {
+  color: #fff;
+  text-align: justify;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.container a{
+  text-decoration: none;
+}
+
+#plan .head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#active-plan-heading{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.head p{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.head button{
+  border: none;
+}
+
+.head .view{
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.816px;
+  border-radius: 4.816px;
+  border: 2px solid #efefef;
+  font-family: "Lato", sans-serif;
+  background: none;
+  color: white;
+  margin-right: 5rem;
+}
+
+
+.head button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.newplan {
+  width: 189px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #b2d3f2;
+  margin-right: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s ease;
+}
+.newplan :hover {
+  opacity: 0.5;
+}
+
+.guide {
+    padding: 12px;
+    background-color: #02293d;
+    width: 220px;
+    height: 250px;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.guide-img, .guide-img img{
+    width: 100%;
+    height: 110px;
+}
+
+.guide-details{
+    width: 100%;
+}
+
+.guide-details p{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    column-gap: 8px;
+}
+
+.guide-details span {
+  color: #b2d3f2;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.guide-btn{
+    width: 100%;
+}
+
+.guide button {
+    margin-top: 8px;
+    width: 100%;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #b2d3f2;
+  border: none;
+  font-weight: bold;
+  color: #023047;
+  transition: 0.2s ease;
+}
+.guide button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+
+/* new card code */
+.booking-card-content {
+    margin-top: 1.5rem;
+    display: flex;
+    column-gap: 1.5rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+  
+  }
+  
+  .booking-card {
+    padding: 12px;
+    background-color: #02293d;
+    width: 220px;
+    height: 250px;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .bcard-tag {
+    display: flex;
+    padding: 4px 7px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+  }
+  
+  .bcard-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .bcard-img{
+    background-image: url(../Assets/ballon.jpg);
+    height: 125px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  
+  #p1{
+    background-image: url(../Assets/agra\ red\ fort-1.jpg);
+  }
+  #p2{
+    background-image: url(../Assets/varansai.jpg);
+  }
+  #p3{
+    background-image: url(../Assets/goa_waterfall.jpg);
+  }
+
+  .dbtn-main {
+    background-color: #b2d3f2;
+    height: 24px;
+    width: 136px;
+    border: none;
+    color: #023047;
+    border-radius: 4px;
+  }
+  
+  .bcard-btntag {
+    display: flex;
+    justify-content: start;
+    column-gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .bcard-content p{
+    font-weight: 500;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #8c8c8c;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .bcard-content h2 {
+    font-size: 16px;
+    color: white;
+    margin-top: 8px;
+    font-family: "Lato", sans-serif;
+  }
+  /* Medium Screen View*/
+
+  @media (max-width:820px){
+    .container{
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    #plan{
+      margin-left: 145px;
+      margin-right: 70px;
+    }
+    body{
+      height: 100%;
+  }
+  #active-plan-heading, .head p{
+    margin-bottom: 25px;
+  }
+  .head .view{
+    float: right;
+    margin-right: 3px;
+    height: 35px;
+  }
+  .head .newplan{
+    margin-right: 0px;
+  }
+}

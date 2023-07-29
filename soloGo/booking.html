@@ -5,49 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
     <link rel="stylesheet" href="./styles/booking.css">
-
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
     <section>
-        <div class="sidebar">
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
             <div class="dashboard-logo">
-                <h2>SoloGo</h2>
+                <h2><a href="index.html">SoloGo</a></h2>
                 <hr>
             </div>
             <div class="dashboard-sidebar">
                 <div class="text-with-icon">
-                    <img src="./icons/dashboard.svg" alt="">
-                    <p>Dashboard</p>
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <p><a href="Dashboard.html">Dashboard</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/plan.svg" alt="">
-                    <p>Plans</p>
+                    <a href="Plan.html"><img src="./icons/plan.svg" alt=""></a>
+                    <p><a href="Plan.html">Plans</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sheet.svg" alt="">
-                    <p>Expenses</p>
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <p><a href="Expense.html">Expenses</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/sparkle.svg" alt="">
-                    <p>Reviews</p>
+                    <a href="Rewards.html"><img src="./icons/sparkle.svg" alt=""></a>
+                    <p><a href="Rewards.html">Rewards</a></p>
                 </div>
                 <div class="text-with-icon">
-                    <img src="./icons/hotel.svg" alt="">
-                    <p>Bookings</p>
+                    <a href="booking.html">
+                        <div class="dashboard-highlight">
+                        <img src="./icons/hotel.svg" alt="">
+                        <p>Bookings</p>
+                    </div></a>
                 </div>
             </div>
             <div class="dashboard-logout">
                 <div class="text-with-icon">
-                    <img src="./icons/log-out.svg" alt="">
-                    <p>Log Out</p>
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="dashboard-search">
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
             <form action="">
                 <img src="./icons/search.svg" alt="">
                 <input type="search" name="" placeholder="Search" id="mainsearch">
@@ -56,9 +68,7 @@
                 <div class="dashboard-noti">
                     <img src="./icons/bell.svg" alt="">
                 </div>
-                <div class="dashboard-profile">
-
-                </div>
+                <a href="profile.html"><div class="dashboard-profile"></div></a>
             </div>
         </div>
     </section>
@@ -71,7 +81,7 @@
             <div class="booking-card">
                 <div class="booking-card-top">
                     <div class="bcard-top">
-                        <span class="bcard-tag">4.5 Excellent</span>
+                            <span class="bcard-tag">4.5 Excellent</span>
                         <div class="bcard-option">
                             <img src="./icons/3dot.svg" alt="">
                         </div>
@@ -79,10 +89,10 @@
                 </div>
                 <div class="bcard-img"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>4.7 km</p>
+                    <h2>Grand View Hotel</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 2200</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
@@ -99,10 +109,10 @@
                 </div>
                 <div class="bcard-img"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>1.2 km</p>
+                    <h2>Sunflower Resort</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 3450</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
@@ -119,10 +129,10 @@
                 </div>
                 <div class="bcard-img"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>3.5 km</p>
+                    <h2>Tranquil Oasis Inn</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 4700</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
@@ -138,10 +148,10 @@
                 </div>
                 <div class="bcard-img"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>2.3 km</p>
+                    <h2>Sapphire Suites</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 3780</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
@@ -158,10 +168,10 @@
                 </div>
                 <div class="bcard-img"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>1.2 km</p>
+                    <h2>Ocean Breeze Inn</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 3655</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
@@ -177,24 +187,52 @@
             <div class="booking-card">
                 <div class="booking-card-top">
                     <div class="bcard-top">
-                        <span class="bcard-tag">4.5 Excellent</span>
+                        <span class="bcard-tag ">4.5 Excellent</span>
                         <div class="bcard-option">
                             <img src="./icons/3dot.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="bcard-img"></div>
+                <div class="bcard-img" id="bflight"></div>
                 <div class="bcard-content">
-                    <p>1.2 km from Taj Mahal</p>
-                    <h2>The Taj Vilas</h2>
+                    <p>-20% Off</p>
+                    <h2>Lufthansa</h2>
                     <div class="bcard-btntag">
-                        <span class="bcard-tag">&#8377 200</span>
+                        <span class="bcard-tag">&#8377 8000</span>
+                        <button class="dbtn-main">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-card">
+                <div class="booking-card-top">
+                    <div class="bcard-top">
+                        <span class="bcard-tag ">4.5 Excellent</span>
+                        <div class="bcard-option">
+                            <img src="./icons/3dot.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bcard-img" id="bflight"></div>
+                <div class="bcard-content">
+                    <p>-18% Off</p>
+                    <h2>Indigo</h2>
+                    <div class="bcard-btntag">
+                        <span class="bcard-tag">&#8377 6000</span>
                         <button class="dbtn-main">View Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
 </body>
 </html>

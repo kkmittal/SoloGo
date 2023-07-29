@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
+    <link rel="stylesheet" href="./styles/Rewards.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(   );
+    </script>
+    <!-- aos -->
+    <section>
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
+            <div class="dashboard-logo">
+                <h2><a href="index.html">SoloGo</a></h2>
+                <hr>
+            </div>
+            <div class="dashboard-sidebar">
+                <div class="text-with-icon">
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <a href="Dashboard.html"><p>Dashboard</p></a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Plan.html"><img src="./icons/plan.svg" alt=""></a>
+                    <p><a href="Plan.html">Plans</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <p><a href="Expense.html">Expenses</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Rewards.html">
+                        <div class="dashboard-highlight">
+                            <img src="./icons/sparkle.svg" alt="">
+                            <p>Rewards</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="booking.html"><img src="./icons/hotel.svg" alt=""></a>
+                    <p><a href="booking.html">Bookings</a></p>
+                </div>
+            </div>
+            <div class="dashboard-logout">
+                <div class="text-with-icon">
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
+            <form action="">
+                <img src="./icons/search.svg" alt="">
+                <input type="search" name="" placeholder="Search" id="mainsearch">
+            </form>
+            <div class="search-right">
+                <div class="dashboard-noti">
+                    <img src="./icons/bell.svg" alt="">
+                </div>
+                <a href="profile.html"><div class="dashboard-profile"></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="rewards-cards">
+        <div class="reward-heading">
+            <h1>Rewards</h1>
+        </div>
+        <div class="reward-all-card">
+            <div class="r-card">
+                <img src="./Assets/church_goa.jpg" alt="">
+                <h2>1 Free Trip To Goa</h2>
+                <div class="reward-detail">
+                    <div class="reward-cointag">
+                        <p>G</p>
+                        <img src="./icons/coincircleblue.svg" alt="">
+                    </div>
+                    <h3>10,000</h3>
+                </div>
+                <button>Claim Now</button>
+            </div>
+            <div class="r-card" >
+                <img src="./Assets/ghats-2.jpg" alt="">
+                <h2>1 Free Trip To Varanasi</h2>
+                <div class="reward-detail">
+                    <div class="reward-cointag">
+                        <p>G</p>
+                        <img src="./icons/coincircleblue.svg" alt="">
+                    </div>
+                    <h3>8,000</h3>
+                </div>
+                <button>Claim Now</button>
+            </div>
+            <div class="r-card">
+                <img src="./Assets/hotel_2.jpg" alt="">
+                <h2>50% Off on Hotel Booking</h2>
+                <div class="reward-detail">
+                    <div class="reward-cointag">
+                        <p>G</p>
+                        <img src="./icons/coincircleblue.svg" alt="">
+                    </div>
+                    <h3>7,000</h3>
+                </div>
+                <button>Claim Now</button>
+            </div>
+            <div class="r-card">
+                <img src="./Assets/airport.jpg" alt="">
+                <h2>30% Off of Flight Ticket</h2>
+                <div class="reward-detail">
+                    <div class="reward-cointag">
+                        <p>G</p>
+                        <img src="./icons/coincircleblue.svg" alt="">
+                    </div>
+                    <h3>6,000</h3>
+                </div>
+                <button>Claim Now</button>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
+</body>
+</html>

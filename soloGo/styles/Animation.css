@@ -1,0 +1,46 @@
+.slideit-1 img{
+    cursor: pointer;
+    animation: slide 16s ease-in infinite reverse;
+  }
+.slideit-2 img{
+    cursor: pointer;
+    animation: slide 16s ease-in infinite 1s reverse;
+  }
+.slideit-3 img{
+    cursor: pointer;
+    animation: slide 16s ease-in infinite 2s reverse;
+  }
+.slideit-4 img{
+    cursor: pointer;
+    animation: slide 16s ease-in infinite 3s reverse;
+  }
+.slideit-5 img{
+    cursor: pointer;
+    animation: slide 16s ease-in infinite 4s reverse;
+  }
+  @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-201%);
+    }
+    75%{
+        transform: translateX(-201%);
+    }
+    80%{
+        transform: translateX(-302%);
+    }
+    100%{
+        transform: translateX(-302%);
+    }
+  }

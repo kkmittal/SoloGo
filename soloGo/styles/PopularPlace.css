@@ -70,6 +70,7 @@ span {
     scroll-behavior: smooth;
     white-space: nowrap;
     margin-top: 2rem;
+    overflow-x: hidden;
 }
 
 .card {
@@ -94,7 +95,7 @@ span {
     -webkit-backdrop-filter: blur(8.5px);
     border-radius: 10px;
     height: 116px;
-    width: 300px;
+    width: 340px;
     padding: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -108,7 +109,7 @@ span {
     height: 50px;
 }
 
-.box {
+.ratingbox {
     display: flex;
     align-items: center;
     gap: 0.7rem;
@@ -185,12 +186,13 @@ span {
     color: #efefef;
     font-family: "Mukta", sans-serif;
     font-size: 14px;
+    cursor: pointer;
     font-weight: 600;
 }
 
-/* arrows css */
+/* parrows css */
 
-.arrow {
+.parrow {
     position: absolute;
     top: 75%;
     transform: translateY(-50%);
@@ -206,16 +208,16 @@ span {
     z-index: 10;
   }
   
-  .left-arrow {
+  .pleft-arrow {
     left: 10px;
   }
   
-  .right-arrow {
+  .pright-arrow {
     right: 10px;
   }
   
   /* Additional styles for the arrow hover effect (optional) */
-  .arrow:hover {
+  .parrow:hover {
     background-color: #023047;
     color: #fff;
     transition: background-color 0.3s ease;

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloGo</title>
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
+    <section>
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
+            <div class="dashboard-logo">
+                <h2><a href="index.html">SoloGo</a></h2>
+                <hr>
+            </div>
+            <div class="dashboard-sidebar">
+                <div class="text-with-icon">
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <a href="Dashboard.html">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Plan.html"><div class="dashboard-highlight">
+                        <img src="./icons/plan.svg" alt="">
+                        <p>Plans</p>
+                    </div></a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <p><a href="Expense.html">Expenses</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Rewards.html"><img src="./icons/sparkle.svg" alt=""></a>
+                    <p><a href="Rewards.html">Rewards</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="booking.html"><img src="./icons/hotel.svg" alt=""></a>
+                    <p><a href="booking.html">Bookings</a></p>
+                </div>
+            </div>
+            <div class="dashboard-logout">
+                <div class="text-with-icon">
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
+            <form action="">
+                <img src="./icons/search.svg" alt="">
+                <input type="search" name="" placeholder="Search" id="mainsearch">
+            </form>
+            <div class="search-right">
+                <div class="dashboard-noti">
+                    <img src="./icons/bell.svg" alt="">
+                </div>
+                <a href="profile.html">
+                    <div class="dashboard-profile"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="plan">
+        <div class="head">
+            <p>Your Plans</p>
+            <a href="CreatePlan.html" data-aos="fade-left" data-aos-duration="1000"><button class="newplan">+ Create New
+                    Plan</button></a>
+        </div>
+        <div class="container">
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">5 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p1"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Kanpur to Agra</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 2500</span> to <span class="bcard-tag">&#8377 4000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- new card -->
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">3 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p2"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Indore to Goa</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 2000</span> to <span class="bcard-tag">&#8377 3000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">10 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p3"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Delhi to Jammu</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 15,000</span> to <span class="bcard-tag">&#8377 20,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="plan">
+        <div class="head">
+            <p>Most Followed Plans</p>
+        </div>
+        <div class="container">
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">5 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p1"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Lucknow to Goa</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 5,000</span> to <span class="bcard-tag">&#8377 10,000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- new card -->
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">4 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p2"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Mathura to Aayodhya</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 2000</span> to <span class="bcard-tag">&#8377 5000</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="planClickedPage.html">
+                <div class="booking-card">
+                    <div class="booking-card-top">
+                        <div class="bcard-top">
+                            <span class="bcard-tag">5 Days</span>
+                            <div class="bcard-option">
+                                <img src="./icons/3dot.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bcard-img" id="p3"></div>
+                    <div class="bcard-content">
+                        <p>24/07/2023</p>
+                        <h2>Punjab to Orrisa</h2>
+                        <div class="bcard-btntag">
+                            <span class="bcard-tag">&#8377 4500</span> to <span class="bcard-tag">&#8377 7400</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
+</body>
+
+</html>

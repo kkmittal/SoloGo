@@ -66,23 +66,23 @@ html {
 .left-side .important {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
   margin-right: 50px;
 }
 .left-side .services {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
 }
 .left-side .services a {
   color: #fff;
   margin: 18px;
   text-decoration: none;
+  font-size: 18px;
 }
 .left-side .important a {
   color: #fff;
   margin: 18px;
   text-decoration: none;
+  font-size: 18px;
 }
 .left-side .services #head,
 .left-side .important #head {

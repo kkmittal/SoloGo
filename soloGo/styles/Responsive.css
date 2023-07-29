@@ -1,0 +1,262 @@
+/* Base styles that apply to all screen sizes */
+* {
+box-sizing: border-box;
+}
+
+body, p {
+margin: 0;
+padding: 0;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+/* Styles for smaller screens like tablets and smartphones */
+.hero-heading {
+    font-size: 6rem;
+    line-height: 6rem;
+    top: 4rem;
+    left: 1rem;
+
+}
+
+.navbar {
+    padding: 5px;
+}
+
+.left-navbar {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.left-navsec {
+    font-size: 18px;
+}
+
+.right-navbar {
+    margin-right: 0.5rem;
+}
+
+.testimonial-heading {
+    font-size: 48px;
+    padding-top: 4rem;
+}
+
+.Serviceimg {
+    width: 300px;
+    height: 300px;
+}
+
+.testimonial-card {
+    width: 360px;
+    height: 200px;
+}
+
+.card-bottom img {
+    width: 24px;
+    height: 16px;
+}
+
+.btn-services {
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.testimonial {
+    margin-left: 1rem;
+}
+
+
+.box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+}
+
+.btn-text-align{
+    width: 100%;
+    justify-content: center;
+    column-gap: 8px;
+}
+.tablet{
+    flex-direction: column-reverse;
+}
+
+#Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    margin: 0;
+    padding: 2rem;
+}
+
+.boxdetail {
+    margin: 0;
+    padding: 2rem;
+}
+
+.left-side a{
+    font-size: 16px;
+}
+
+.right-side .text h2 {
+    font-size: 28px;
+}
+
+.right-side .text p{
+    font-size: 18px;
+} 
+
+}
+
+@media (min-width: 0px) and (max-width: 768px){
+
+    .btn-tertiary{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .left-navsec{
+        visibility: hidden;
+    }
+    .hero img{
+        height: 50vh;
+    }
+
+    .horizontal-scroll-container{
+        margin-left: 0rem;
+    }
+/* this stop animation */
+    /* *, *:before, *:after {
+        animation: none !important;
+        } */
+
+    .hero-heading{
+        top: 4rem;
+        left: 0;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 6rem;
+        font-weight: 100;
+    }
+    .right-navbar{
+        position: relative;
+    }
+    .btn-primary {
+        margin-right: 100px;
+        position: absolute;
+        left: 55%;
+        top: 30%;
+        height: 35px;
+    }
+    .navbar{
+        display: flex;
+        padding: 5px;
+        height: 60px;
+    }
+    .popular-place-heading{
+        font-size: 2rem;
+    }
+    .card{
+        position: relative;
+    }
+    .card-img{
+        width: 400px;
+    }
+    .card-details{
+        width: 325px;
+    }
+    #features{
+        font-size: 54px;
+    font-weight: 500;
+    line-height: normal;
+
+    }
+    .box{
+        justify-content: center;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 55%;
+    }
+    .Serviceimg{
+        width: 300px;
+        height: 300px;
+        margin-left: 25px;
+    }
+    #Services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-services {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    .left {
+        margin: 0;
+        padding: 2rem;
+    }
+    
+    .boxdetail {
+        margin: 0;
+        padding: 2rem;
+        width: 400px;
+    }
+    .boxdetail h4{
+        margin: 5px 50px;
+        font-size: 28px;
+    }
+.btn-text-align{
+    width: 100%;
+    justify-content: center;
+    column-gap: 8px;
+}
+.tablet{
+    flex-direction: column-reverse;
+}
+.testimonial {
+    margin-left: 1rem;
+}
+.testimonial-heading {
+    font-size: 28px;
+    padding-top: 2rem;
+}
+
+
+.card-bottom img {
+    width: 20px;
+}
+.overlay{
+    margin-left: 30px;
+    margin-right: 40px;
+}
+.left-side{
+    margin-right: 30px;
+}
+.left-side a{
+    font-size: 12px;
+}
+
+.right-side .text h2 {
+    font-size: 20px;
+}
+
+.right-side .text p{
+    font-size: 14px;
+}
+.right-side .logo img {
+    height: 15px;
+    margin-right: 15px;
+    /* font-weight: 24px; */
+  }
+  
+}
+
