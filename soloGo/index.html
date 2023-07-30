@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoloGo: Your Personalised Travel Companion</title>
-    <link rel="stylesheet" href="./styles/Snowfall.css">
     <link rel="stylesheet" href="./styles/Navbar.css" />
     <link rel="stylesheet" href="./styles/HeroSection.css" />
     <link rel="stylesheet" href="./styles/PopularPlace.css" />
@@ -14,6 +12,7 @@
     <link rel="stylesheet" href="./styles/Animation.css">
     <link rel="stylesheet" href="./styles/Testimonial.css">
     <link rel="stylesheet" href="./styles/Responsive.css">
+    <link rel="stylesheet" href="./styles/Snowfall.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- animation library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,20 +23,25 @@
 
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-
-        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Literata:wght@400;500;600;800&family=Mukta:wght@400;500&display=swap");
-    </style>
 </head>
-
+<style>
+    html
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/* *{
+ outline: 1px solid red;
+} */
+</style>
 <body>
     <script src="script/snowfall.js"></script>
     <!-- animation library js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <div id="snow" count="400" ></div>
     <nav class="navbar" data-aos="fade-down" data-aos-delay="1000">
         <div class="left-navbar"><a href="/">SoloGo</a></div>
         <div class="right-navbar">
@@ -47,14 +51,13 @@
                 <p><a href="ContactUs.html">Contact Us</a></p>
             </div>
             <div class="right-navsec">
-                <button class="btn-primary"><a href="signup.html">Sign Up</a></button>
+                <a href="signup.html"><button class="btn-primary">Sign Up</button></a>
             </div>
         </div>
     </nav>
 
     <!-- Hero section -->
     <section class="hero">
-        <div id="snow" count="400"></div>
         <img src="./Assets/hero_image.png" alt="" />
         <h1 class="hero-heading" data-aos="fade-down" data-aos-duration="1000">Plan your Destination</h1>
     </section>

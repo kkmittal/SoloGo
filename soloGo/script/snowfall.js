@@ -78,7 +78,8 @@ function spawnSnowCSS(snowDensity = 200) {
   let rule = baseCss;
 
   for (let i = 1; i < snowDensity; i++) {
-    let randomX = Math.random() * 100; // vw
+    // change this randomX as width of snowfall range
+    let randomX = Math.random() * 80; // vw
     let randomOffset = Math.random() * 10 // vw;
     let randomXEnd = randomX + randomOffset;
     let randomXEndYoyo = randomX + (randomOffset / 2);

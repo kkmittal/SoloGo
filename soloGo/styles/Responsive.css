@@ -11,6 +11,13 @@ padding: 0;
 /* Media queries for different screen sizes */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
 /* Styles for smaller screens like tablets and smartphones */
+body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .hero-heading {
     font-size: 6rem;
     line-height: 6rem;
@@ -115,14 +122,21 @@ padding: 0;
 
 @media (min-width: 0px) and (max-width: 768px){
 
+    body, html{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .btn-tertiary{
         margin-right: 0;
         text-align: center;
     }
 
-    .left-navsec{
-        visibility: hidden;
-    }
+    .left-navsec {
+        display: none; /* Hide the left-navsec content on tablet devices */
+      }
     .hero img{
         height: 50vh;
     }
@@ -131,9 +145,9 @@ padding: 0;
         margin-left: 0rem;
     }
 /* this stop animation */
-    /* *, *:before, *:after {
+    *, *:before, *:after {
         animation: none !important;
-        } */
+        }
 
     .hero-heading{
         top: 4rem;
@@ -147,10 +161,10 @@ padding: 0;
         position: relative;
     }
     .btn-primary {
-        margin-right: 100px;
+        /* margin-right: 100px;
         position: absolute;
         left: 55%;
-        top: 30%;
+        top: 30%; */
         height: 35px;
     }
     .navbar{
@@ -260,3 +274,58 @@ padding: 0;
   
 }
 
+
+/* Existing styles in responsive.css */
+
+/* Add media query for tablet devices */
+@media screen and (max-width: 1023px) {
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .left-navbar {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .right-navbar {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    
+  
+    .right-navsec {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the Signup button */
+    }
+  
+    .right-navbar .btn-primary {
+        border: none;
+        color: #efefef;
+        background-color: #023047;
+        padding: 4px 10px;
+        border-radius: 8px;
+        height: 42px;
+        font-family: 'Mukta', sans-serif;
+        font-size: 16px;
+        width: 100px;
+        cursor: pointer;
+        transition-duration: 200ms;
+    }
+  
+    .right-navbar .btn-primary a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .right-navbar .btn-primary:hover {
+      color: #023047;
+        background-color: white;
+        transition-duration: 200ms;
+    }
+  }
+  
