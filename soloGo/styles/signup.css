@@ -245,7 +245,7 @@ body{
             visibility: hidden;
         }
         .signup-content-left h2{
-            margin-left: 100px;
+            /* margin-left: 100px; */
             margin-top: 80px;
         }
         .signup-content-left{

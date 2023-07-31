@@ -284,12 +284,12 @@ body, html{
     }
   
     .left-navbar {
-      width: 50%;
+      /* width: 50%; */
       text-align: left;
     }
   
     .right-navbar {
-      width: 50%;
+      /* width: 50%; */
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -323,7 +323,7 @@ body, html{
     }
   
     .right-navbar .btn-primary:hover {
-      color: #023047;
+        color: #023047;
         background-color: white;
         transition-duration: 200ms;
     }

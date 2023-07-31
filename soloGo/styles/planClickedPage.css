@@ -360,5 +360,6 @@ body {
   .plan-content{
     width: 100%;
     padding-right: 2rem;
+    max-height: 75vh;
   }
 }

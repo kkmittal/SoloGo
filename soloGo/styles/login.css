@@ -250,7 +250,7 @@ body{
             visibility: hidden;
         }
         .login-content-left h2{
-            margin-left: 100px;
+            /* margin-left: 100px; */
             margin-top: 80px;
         }
         .login-content-left{
